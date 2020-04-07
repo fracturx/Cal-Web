@@ -57,6 +57,73 @@
 
 }
 
+
+.b1{
+    background-color: #f20f57;
+    color: white;
+    width: 300px;
+    height: 50px;
+    padding: 12px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 27px;
+    margin-top: 10rem;
+    transition: background-color 200ms ease;
+    border: none;
+}
+
+.specialText {
+    font-size: 24px;
+    color: white;
+}
+
+.close{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    float: left;
+}
+
+.close svg {
+    color: rgb(163, 163, 163);
+    transition: 200ms ease;
+
+}
+
+.close svg:hover {
+    color: pink;
+    cursor: pointer;
+}
+
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 700px; /* Full width (cover the whole page) */
+    height: 200px; /* Full height (cover the whole page) */
+    margin-top: 300px;
+    margin-left: 600px;
+    background-color: rgb(0, 0, 0); /* Black background with opacity */
+    z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+    word-wrap: break-word;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  #yourDIV {
+    box-shadow: 0px 0px 1px 5000px rgba(0,0,0,0.8);
+    z-index: 2;
+  }
+
+
+.b1:hover{
+    border: none;
+    background-color: #CC0040;
+    cursor: pointer;
+}
+
+
 .standardText {
     font-size: 20px;
 }
@@ -95,14 +162,16 @@ body {
     flex-direction: row;
     align-items: center;
     height: 100%;
+    justify-content: flex-start;
 }
 
 .nav-item {
-    width: 100%;
+    width: 75%;
     transition: height 200ms ease in ease-in-out forwards;
 }
 
 .nav-link {
+    justify-content: flex-start;
     display: flex;
     align-items: center;
     height: 5rem;
@@ -115,7 +184,7 @@ body {
 
 
 .link-text {
-    margin-left: 1rem;
+    margin-left: 0rem;
 }
 
 .nav-link svg {
@@ -133,7 +202,7 @@ body {
 }
 
 .navbar:hover {
-    height: 16vh;
+    height: 8vh;
 }
 
 .nav-link:hover .link-text {
